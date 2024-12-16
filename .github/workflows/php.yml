@@ -1,5 +1,7 @@
 name: PHP PHPUnit Test
+
 on: [push, pull_request]
+
 jobs:
 phpunit:
 runs-on: ubuntu-latest
@@ -8,7 +10,7 @@ steps:
 - name: Set up PHP
 uses: shivammathur/setup-php@v2
 with:
-php-version: '8.0'
+php-version: '8.3.6'
 - name: Install dependencies
 run: composer install
 - name: Run PHPUnit tests
